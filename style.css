@@ -2306,7 +2306,7 @@ hr {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    height: 800px;
+    height: 750px;
     width: 100vw;
     background-color: #0066f5;
     /* border: 1px solid red;  */
@@ -2327,7 +2327,7 @@ hr {
     padding: 42.72px 0px 0px 32px;
     /* border: 4px solid goldenrod; */
     width: 100%;
-    height: 250px;
+    height: 210px;
     text-align: left;
     position: absolute;
     display: block;
@@ -2634,13 +2634,15 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 50px;
     width: 100%;
     margin: 10px 0;
+
 
 }
 .query-offer1-items a {
     display: flex;
+    justify-content: space-around;
     text-decoration: none;
 }
 
@@ -2664,7 +2666,6 @@ hr {
     justify-content: space-between;
     width: 80%;
     height: 60%;
-    padding: 10px 0px 0px 10px;
     text-align: left;
 
 }

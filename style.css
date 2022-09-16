@@ -1,9 +1,13 @@
 
+
+@import url('http://fonts.cdnfonts.com/css/br-firma');
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'BR Firma', sans-serif;                
     text-decoration: none;
     /* overflow-x: hidden; */
     /* border: 3px solid #40b96e; */
@@ -83,6 +87,7 @@
     width: 16%;
     height: 100%;
  
+ 
 }
 .option {
     display: flex;
@@ -90,6 +95,7 @@
     justify-content: space-between;
     width: 84%;
     height: 100%;
+    padding-left: 40px;
 }
 
 .nav {
@@ -119,7 +125,7 @@
 }
 
 .dropbox i {
-    padding: 4px 0px 0px 6px;
+    padding: 1px 0px 0px 6px;
     font-size: 18px;
 }
 
@@ -1526,7 +1532,7 @@
 .theask {
     height: 30%;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
    /* border: 1px solid red; */
 }
 
@@ -1542,26 +1548,30 @@
 }
 
 .animated-text {
-    display: flex;
-    flex-direction: column;
+
     height: 100%;
-    width: 50%;
-    position: relative;
-    overflow: hidden;
-    /* border: 1px solid blue; */
+    width: 100%;
+
+  
 }
 
-.slide-text {
+.animated-text span {
+    display: flex;
+    height: 100%;
+    
+}
+/* .slide-text {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
+    height: 70%;
     width: 50%;
     position: relative;
+    animation: anim 7s infinite;
     left: 0px;
-    overflow: hidden;
-    /* border: 1px solid blueviolet; */
+ 
 
-}
+} */
 
 .post1 {
     margin-left: 450px;
@@ -1569,21 +1579,19 @@
 
 
 
-.early {
+.animated-text span h6{
     color: #6c82a3;
     font-weight: 700;
+    align-items: center;
+    justify-content: center;
     font-size: 60px;
     letter-spacing: -1.8px;
+    animation: slide  7s infinite;
     /* overflow: hidden; */
-
-
 }
 
-.early:first-child {
-    animation: slide 7s infinite;
-    transform: translate(0px, 50px) scale(1.02, 1.02);
-    opacity: 0;
-}
+
+
 
 
 
@@ -1591,53 +1599,67 @@
 
     
     0%{
-        margin: 0px;
+       
+        transform: translate(0px, 0px);
+        /* opacity: 1; */
     }
 
-    14%{
-        margin: 0px;
+   14%{
         
+        transform: translate(0px, 0px);
+        /* opacity: 1; */
     }
 
     28%{
-        margin: -40px;
+      
+        transform: translate(0px, -80px);
+        /* opacity: 1; */
     }
 
     42%{
-        margin: -80px;
-    }
-
-    60%{
-        margin: -120px;
+       
+        transform: translate(0px, -190px);
+        /* opacity: 1; */
+    } 
+     60%{
+        margin: -200px;
+        transform: translate(0px, -300px);
+        /* opacity: 1; */
     }
     74%{
-        margin: -160px;
+      
+        transform: translate(0px, -400px);
+       
     }
 
     88%{
-        margin: -200px;
-    }
+       
+        
+        transform: translate(0px, -500px);
+    } 
     100%{
-        margin: -240px;
+        
+       
+        transform: translate(0px, -800px)
     }
 }
 
-.late {
+.animated-text span h5 {
     color: #022b69;
     font-weight: 700;
     font-size: 60px;
     letter-spacing: -1.8px;
     margin-left: 30px;
+    animation: slide  7s infinite;
 }
 
-.late:first-child {
+/* .late:first-child {
     animation: anim 7s infinite;
-      transform: translate(0px, 50px) scale(1.02, 1.02);
+      transform: translate(0px, 5px) scale(1.02, 1.02);
     opacity: 0;
-}
+} */
 
-
-.late a {
+.animated-text span h5 a {
     color: #0066f5;
     text-decoration: none;
     font-weight: 700;
@@ -1647,9 +1669,9 @@
 
 
 
-@keyframes anim {
+@keyframes slide {
     
-    0%{
+    /* 0%{
         margin: 0px;
     }
 
@@ -1680,7 +1702,54 @@
 
     100%{
         margin: -240px;
+    } */
+     
+    0%{
+        /* margin: 0px; */
+        transform: translate(0px, 20px);
+        /* opacity: 1; */
     }
+
+    14%{
+        /* margin: -50px; */
+        transform: translate(0px, 0px);
+        /* opacity: 1; */
+    }
+
+    28%{
+        /* margin: -100px; */
+        transform: translate(0px, -40px);
+        /* opacity: 1; */
+    }
+
+    42%{
+        /* margin: -150px; */
+        transform: translate(0px, -80px);
+        /* opacity: 1; */
+    }
+
+    60%{
+        /* margin: -200px; */
+        transform: translate(0px, -120px);
+        /* opacity: 1; */
+    }
+    74%{
+        /* margin: -250px; */
+        transform: translate(0px, -160px);
+       
+    }
+
+    88%{
+       
+        /* margin: -300px; */
+        transform: translate(0px, -200px);
+    }
+    100%{
+        
+        /* margin: -350px; */
+        transform: translate(0px, -240px)
+    }
+
 
 }
 /* 
@@ -1821,7 +1890,7 @@
 
 .perk-signup {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 33%;
     width: 100%;
@@ -1842,7 +1911,7 @@
     flex-wrap: wrap;
     height: 40%;
     width: 40%;
-       /* border: 1px solid red; */
+    /* border: 5px solid purple; */
 }
 
 .perk-footer h3 {
@@ -1851,6 +1920,7 @@
     line-height: 1.4;
     letter-spacing: -1px;
     font-weight: 700;
+    width: 88%;
 
 }
 
@@ -2306,12 +2376,7 @@ hr {
     transition: transform 0.5s;
   }
 
-  .parentclick .fa-angle-down:hover {
-    transform: rotate(180deg)
-    scale(1.02, 1.02);
-    transition: transform 0.5s;
-  }
-
+  
   .parentclick:hover .fa-angle-down {
     transform: rotate(180deg)
     scale(1.02, 1.02);
@@ -2333,7 +2398,7 @@ hr {
     top: 40px;
     z-index: 97;
     display: none;
-  
+    margin-top: 15%;
     
 
 
@@ -3750,7 +3815,7 @@ hr {
 .animated-text {
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 33%;
     width: 100%;
     position: relative;
     /* border: 1px solid blue; */
@@ -3760,7 +3825,7 @@ hr {
 .slide-text {
     display: flex;
     flex-direction: column;
-    height: 50%;
+    height: 35%;
     width: 100%;
     position: relative;
     left: 0px;
@@ -4126,9 +4191,9 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 2500px;
+    height: 2000px;
     width: 100%;
-    background-image: url(footerimg.svg);
+    background-image: none;
     background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;

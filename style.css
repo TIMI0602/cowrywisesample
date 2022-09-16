@@ -2306,7 +2306,7 @@ hr {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    height: 750px;
+    height: 800px;
     width: 100vw;
     background-color: #0066f5;
     /* border: 1px solid red;  */
@@ -2327,10 +2327,11 @@ hr {
     padding: 42.72px 0px 0px 32px;
     /* border: 4px solid goldenrod; */
     width: 100%;
-    height: 210px;
+    height: 260px;
     text-align: left;
     position: absolute;
     display: block;
+    top: 0px;
 
 
   }
@@ -2349,6 +2350,7 @@ hr {
     box-shadow: none;
     padding: 0;
     -webkit-tap-highlight-color: rgba(255,255,255,.06);
+    position: absolute;
 
   }
 
@@ -2391,14 +2393,14 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 500px;
+    height: 450px;
     background-color: #0066f5;
     position: absolute;
     left: -40px;
     top: 40px;
     z-index: 97;
     display: none;
-    margin-top: 18%;
+    margin-top: 15%;
     
 
 
@@ -2600,7 +2602,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 500px;
+    height: 450px;
     background-color: #0066f5;
     position: absolute;
     left: 0px;
@@ -2634,7 +2636,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 70px;
     width: 100%;
     margin: 10px 0;
 
@@ -2734,7 +2736,7 @@ hr {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 480px;
+    height: 440px;
     background-color: #0066f5;
     position: absolute;
     left: -40px;
@@ -2840,10 +2842,10 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 450px;
+    width: 99vw;
+    height: 380px;
     position: absolute;
-    left: -40px;
+    left: -43px;
     z-index: 97;
     background-color: #0066f5;
     display: none;
@@ -2856,11 +2858,11 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 450px;
+    width: 99vw;
+    height: 350px;
     position: absolute;
     top: 20px;
-    left: 0px;
+    left: -5px;
     background-color: #0066f5;
     /* border: 5px solid red; */
 }
@@ -2984,13 +2986,13 @@ hr {
 
 
   .small-menu {
-    padding: 10px 0px 0px 32px;
+    padding: 20px 0px 0px 32px;
     /* border: 4px solid white; */
     width: 100%;
     height: 390px;
     text-align: left;
     position: absolute;
-    top: 310px;
+    top: 260px;
   }
 
   .small-menu ul {
@@ -3017,7 +3019,7 @@ hr {
     width: 100%;
     height: 150px;
     position: absolute;
-    top: 700px;
+    top: 650px;
     /* border: 4px solid purple; */
 }
 .query-legal-text {

@@ -2397,8 +2397,8 @@ hr {
     left: -40px;
     top: 40px;
     z-index: 97;
-    display: none;
-    margin-top: 15%;
+    /* display: none; */
+    margin-top: 18%;
     
 
 
@@ -4191,7 +4191,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 2000px;
+    height: 2300px;
     width: 100%;
     background-image: none;
     background-size: 120%;
